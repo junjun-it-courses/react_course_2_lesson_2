@@ -1,0 +1,416 @@
+
+* {
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.header__container {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 42px;
+}
+
+.header__logo img{
+  padding: 0 15px;
+}
+
+
+.navigation li {
+  display: inline-block;
+  color: #aeaeae;
+}
+
+.navigation li a {
+  position: relative;
+	cursor: pointer;
+	text-decoration: none; 
+  color: rgb(108, 108, 108);
+  font-size: 16px;
+  padding: 31px 23px;
+}
+
+.navigation li a:after {
+  display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 3px; 
+	background-color: #5094f2;
+	content: "";
+	transition: 0.3s ease-out;
+  margin-top: 26px; 
+}
+
+.navigation li a:hover:after,
+a:focus:after {
+	width: 100%;
+  margin-top: 26px;
+ }
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+
+.content__wrapper {
+
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 30px 20px;
+}
+
+.phone__text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.iphone__wrapper {  
+  display: flex;
+  justify-content: center;
+}
+
+
+.iphone__wrapper,
+.text__wrapper {
+  width: 50%;
+}
+
+
+.text__wrapper{
+  color: #ffffff;
+  
+}
+
+.text__wrapper h2 {
+  font-size: 38px;
+  font-weight: normal;
+  line-height: 50px;
+}
+.text__dummy {
+  font-size: 23px;
+  line-height: 50px;
+}
+
+.item { 
+  padding-top: 20px;
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+.item a.icon {
+  text-decoration: none;
+  background: #5094f2;
+  color: white;
+  border-radius: 2px;
+  padding: 5px 5px 5px 30px;
+  position: relative;
+  border: none;
+  transition: 0.3s;
+}
+
+.item a.icon:hover {
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.item a.icon:active {
+  transition: 0.2s;
+  background: skyblue;
+}
+
+.item a.icon:before {
+ content: '';
+ display: inline-block;
+ width: 20px;
+ height: 20px;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+ position: absolute;
+ left: 5px;
+ top: 50%;
+ transform: translateY(-50%);
+}
+
+.item a.icon.okay:before {
+ background-image: url("../images/okay.png");
+}
+
+
+
+.possibilities {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+
+}
+
+
+.possibilities .possibilitie__item img {
+  margin: 0  auto;
+  transition: 0.3s;
+}
+
+.possibilities .possibilitie__item img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.possibilitie__item h3 {
+  font-size: 20px;
+  margin-top: 40px;
+  color: #5094f2
+}
+
+.possibilitie__item p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgb(144, 144, 144);
+  padding: 0 50px;
+}
+
+
+.product {
+  padding: 50px 0;
+  
+}
+
+.product .product__container  {
+  display: flex;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.product h1 {
+  font-size: 42px;
+  line-height: 2;
+  color: rgb(111, 113, 115);
+  
+}
+
+
+
+.product__logo {
+display: flex;
+text-align: center;
+justify-content: space-between;
+flex-wrap: wrap;
+ width: 50%;
+}
+
+
+
+.product__item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+ 
+  
+}
+
+
+.product__item p:first-child{
+ padding-top: 35px;
+ font-weight: 400;
+ font-size: 28px;
+ color: rgb(111, 113, 115);
+ 
+}
+
+
+
+.product__item p {
+  font-size: 15px;
+  line-height: 3;
+  text-align: left;
+  color: rgb(144, 144, 144);
+}
+
+
+
+.footer__border {
+  
+  border: 1px solid;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-color:rgb(144, 144, 144);
+}
+
+.footer__item {
+  padding: 35px;
+  display: flex;
+  justify-content: center;;
+  font-size: 15px;
+  color: rgb(144, 144, 144);
+}
+
+
+@media(max-width: 992px) {
+
+
+  .header__logo  {
+    display: none;
+  
+  }
+ 
+  .header__container {
+    justify-content: center;
+    padding: 28px 0;
+  }
+
+
+.product__logo,img {
+  display: block;
+  margin: 0 auto;
+}
+
+   
+.product__item p {
+  line-height: 2;
+}
+  
+}
+
+@media(max-width: 768px){
+  .possibilities {
+    margin-top: 50px;
+  }
+  
+  .possibilitie__item img {
+    max-width: 150px;
+  }
+  
+  .possibilitie__item h3 {
+    padding: 0 5px;
+  }
+
+  .possibilitie__item p {
+    padding: 0 10px;
+  }
+
+  .text__wrapper h2:first-child {
+    font-size: 30px;
+  }
+
+  .text__wrapper p {
+    font-size: 25px;
+  }
+
+ .phone__text  img {
+    width: 200px;
+  }
+
+  
+  .product__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product__logo {
+    width: 100%;
+  }
+
+  .product__item {
+    width: 100%;
+    
+  }
+
+  .product__item p {
+    text-align: center;
+  }
+}
+
+@media(max-width: 576px) {
+
+  .possibilities {
+    flex-direction: column;
+    
+  }
+
+  .item__image {
+    width: 300px;
+    padding-top: 20px;
+  }
+
+  .possibilitie__item p{
+    padding: 0 50px;
+  }
+
+  .iphone__wrapper {
+    display: none
+  }
+
+  .phone__text {
+    flex-direction: column;
+  }
+
+  .text__wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .item {
+    padding-left: 0;
+  }
+
+  .item a.icon {
+    padding: 10px 10px 10px 35px;
+  }
+}
+
+@media(max-width: 480px) {
+  .navigation li a {
+    padding: 31px 5px;
+  }
+  
+  .footer__item {
+    padding: 5px;
+  }
+}
+
+
+
+.articles-wrapper h2{
+  text-align: center;
+  display: block;
+}
+
+#articles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article_item {
+  width: calc(50% - 100px);
+  margin: 20px;
+  padding: 20px;
+}
+
+.gallary {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallary img {
+  width: 25%;
+}
